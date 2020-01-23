@@ -1,5 +1,10 @@
 {
-	"extends": "eslint:recommended",
+	"extends": [
+		"prettier"
+	],
+	"plugins": [
+		"prettier"
+	],
 	"env": {
 		"node": true,
 		"es6": true
@@ -12,6 +17,7 @@
 		"sourceType": "module"
 	},
 	"rules": {
+		"prettier/prettier": "error",
 		"array-bracket-newline": [
 			"error",
 			"never"
